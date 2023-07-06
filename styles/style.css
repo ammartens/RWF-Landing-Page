@@ -1,3 +1,90 @@
 html {
   font-family: "Inter", sans-serif;
+  background-color: black;
+}
+
+/** code by webdevtrick ( https://webdevtrick.com ) 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #FF4D50;
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+**/
+body,
+.home-menu,
+.menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.home-menu {
+  position: relative;
+  background-color: black;
+  padding: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.home-menu input:checked ~ .menu {
+  width: 500px;
+}
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.menu li a:hover {
+  color: #fff;
+}
+.home-menu input {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+.home-menu span {
+  position: absolute;
+  left: 30px;
+  width: 30px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.home-menu input:checked ~ span {
+  background-color: #fff;
+}
+.home-menu span:nth-child(2) {
+  transform: translateY(-8px);
+}
+.home-menu input:checked ~ span:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+.home-menu span:nth-child(3) {
+  transform: translateY(8px);
+}
+.home-menu input:checked ~ span:nth-child(3) {
+  transform: translateY(0) rotate(45deg);
+}
+.home-menu input:checked ~ span:nth-child(4) {
+  display: none;
+}
+
+h1 {
+  color: #fff;
 }
