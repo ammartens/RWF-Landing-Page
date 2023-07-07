@@ -1,3 +1,19 @@
+/* For devices 1000px and larger: 
+@media only screen and (min-device-width: 1000px) {
+  body {
+    background-image: url('img_flowers.jpg');
+  }
+}
+
+
+For devices 445px and smaller: 
+@media only screen and (max-device-width: 445px) {
+  body {
+    background-image: url('img_flowers.jpg');
+  }
+}
+*/
+
 html {
   font-family: "Inter", sans-serif;
 }
@@ -13,19 +29,20 @@ header,
   display: flex;
   justify-content: right;
   align-items: center;
+  text-align: center;
 }
 .home-menu {
   position: relative;
   background-color: black;
   padding: 20px;
   transition: 0.5s;
-  overflow: hidden;
+  overflow: scroll;
 }
 .menu {
   margin: 0;
   padding: 0;
   width: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: 0.5s;
 }
 .home-menu input:checked ~ .menu {
@@ -83,8 +100,22 @@ header,
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 8em;
+  font-size: 5em;
 }
 
-footer {
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*footer {
+}
+*/
