@@ -107,8 +107,9 @@ header,
 }
 
 .appstore-container {
-  border: 1px solid red;
+  border: 1px solid pink;
   justify-content: flex-start;
+  margin: 0;
 }
 
 .appstore-container img {
