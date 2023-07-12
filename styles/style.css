@@ -7,13 +7,9 @@
 */
  
 
-/* For devices 445px and smaller: 
-@media only screen and (max-device-width: 445px) {
-  body {
-    background-image: url('img_flowers.jpg');
-  }
-}
-*/
+/* For devices 445px and smaller: */
+
+
 
 html {
   font-family: "Inter", sans-serif;
@@ -23,6 +19,7 @@ body {
   border: 1px solid yellow;
   background-color: black;
   font-size: 100%;
+  min-height: 100vh;
   
 }
 
@@ -68,8 +65,7 @@ h1 {
 .appstore-container {
   border: 1px solid pink;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+
   
 }
 
@@ -79,3 +75,37 @@ h1 {
 /*footer {
 }
 */
+@media only screen and (max-device-width: 390px) {
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .top-container {
+    flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+ 
+  .main-container {
+    display: block;
+  }
+
+  .img-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:100%;
+    margin: 0 auto;
+  }
+}
