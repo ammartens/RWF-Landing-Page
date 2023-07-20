@@ -5,11 +5,6 @@
   }
 }
 */
- 
-
-/* For devices 445px and smaller: */
-
-
 
 html {
   font-family: "Inter", sans-serif;
@@ -20,7 +15,6 @@ body {
   background-color: black;
   font-size: 100%;
   min-height: 100vh;
-  
 }
 
 header {
@@ -65,8 +59,6 @@ h1 {
 .appstore-container {
   border: 1px solid pink;
   bottom: 0;
-
-  
 }
 
 .appstore-container img {
@@ -75,13 +67,14 @@ h1 {
 /*footer {
 }
 */
+
+/* For devices 390px and smaller: */
 @media only screen and (max-device-width: 390px) {
- 
   body {
     display: flex;
     flex-direction: column;
   }
-  
+
   main {
     display: flex;
     flex-direction: column;
@@ -95,9 +88,10 @@ h1 {
   h1 {
     font-size: 3em;
   }
- 
+
   .main-container {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .img-container {
@@ -105,7 +99,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width:100%;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
